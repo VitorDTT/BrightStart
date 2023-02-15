@@ -1,4 +1,4 @@
-on: pull
+on: push
 jobs:
   build-container:
     name: Build container
@@ -16,8 +16,4 @@ jobs:
       with:
         context: .
         push: true
-<<<<<<< HEAD
         tags: vitcunha004/brightstartsvicunha:${{ github.run_number }}
-=======
-        tags: nunesmig/brightstarts:${ github.run_number }
->>>>>>> 3e0e1018e5b8f7c512eb0466aea39a71226de14b
